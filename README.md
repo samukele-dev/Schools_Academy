@@ -1,5 +1,9 @@
+##Django School Academy
+
 **Django School Academy**
 This web app has been developed using the popular Django framework and Bootstrap for the frontend. The app is an online school for all kids to equip them with skills that will provide solutions to the world.
+
+##Basic Features of The App
 
 **Basic Features of The App**
 Get free courses
