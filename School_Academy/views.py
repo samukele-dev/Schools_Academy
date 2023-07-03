@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 
 from .forms import RegisterForm, LoginForm, UpdateUserForm, UpdateProfileForm
 
+from django.contrib.auth import authenticate, login
+
 
 def home(request):
     return render(request, 'schoolAcademy/home.html')
@@ -34,7 +36,8 @@ class RegisterView(View):
         form = self.form_class(request.POST)
 
         if form.is_valid():
-            form.save()
+            user = form.save()
+            Profile.objects.create(user=user)
 
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}')
@@ -61,6 +64,16 @@ class CustomLoginView(LoginView):
         # else browser session will be as long as the session cookie time "SESSION_COOKIE_AGE" defined in settings.py
         return super(CustomLoginView, self).form_valid(form)
 
+def login_view(request):
+    if request.method == 'POST':
+        form = LoginForm(data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('/')
+    else:
+        form = LoginForm()
+    return render(request, 'schoolAcademy/login.html', {'form': form})
 
 @login_required
 def profile(request):
@@ -78,4 +91,4 @@ def profile(request):
         user_form = UpdateUserForm(instance=request.user)
         profile_form = UpdateProfileForm(instance=request.user.profile)
 
-    return render(request, 'users/profile.html', {'user_form': user_form, 'profile_form': profile_form})
+    return render(request, 'schoolAcademy/profile.html', {'user_form': user_form, 'profile_form': profile_form})

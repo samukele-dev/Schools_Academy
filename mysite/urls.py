@@ -27,12 +27,7 @@ from School_Academy.forms import LoginForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
     path('', include('School_Academy.urls')),
-
-    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name='schoolAcademy/login.html',
-                                           authentication_form=LoginForm), name='login'),
-
     path('logout/', auth_views.LogoutView.as_view(
         template_name='schoolAcademy/logout.html'), name='logout'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

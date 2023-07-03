@@ -47,20 +47,13 @@ class RegisterForm(UserCreationForm):
                   'email', 'password1', 'password2']
 
 
+from django.contrib.auth.forms import AuthenticationForm
+
 class LoginForm(AuthenticationForm):
-    username = forms.CharField(max_length=100,
-                               required=True,
-                               widget=forms.TextInput(attrs={'placeholder': 'Username',
-                                                             'class': 'form-control',
-                                                             }))
-    password = forms.CharField(max_length=50,
-                               required=True,
-                               widget=forms.PasswordInput(attrs={'placeholder': 'Password',
-                                                                 'class': 'form-control',
-                                                                 'data-toggle': 'password',
-                                                                 'id': 'password',
-                                                                 'name': 'password',
-                                                                 }))
+    username = forms.CharField(label="Username", max_length=30, 
+                               widget=forms.TextInput(attrs={'class': 'form-control', 'name': 'username'}))
+    password = forms.CharField(label="Password", max_length=30, 
+                               widget=forms.PasswordInput(attrs={'class': 'form-control', 'name': 'password'}))
     remember_me = forms.BooleanField(required=False)
 
     class Meta:
