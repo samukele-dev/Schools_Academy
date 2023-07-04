@@ -14,6 +14,35 @@ from django.contrib.auth import authenticate, login
 def home(request):
     return render(request, 'schoolAcademy/home.html')
 
+def about_view(request):
+    # Add any additional logic you need here
+
+    # Then render your template
+    return render(request, 'schoolAcademy/about.html')
+
+def classes_view(request):
+    # Add any additional logic you need here
+
+    # Then render your template
+    return render(request, 'schoolAcademy/classes.html')
+
+def teachers_view(request):
+    # Add any additional logic you need here
+
+    # Then render your template
+    return render(request, 'schoolAcademy/teachers.html')
+
+def gallery_view(request):
+    # Add any additional logic you need here
+
+    # Then render your template
+    return render(request, 'schoolAcademy/gallery.html')
+
+def contact_view(request):
+    # Add any additional logic you need here
+
+    # Then render your template
+    return render(request, 'schoolAcademy/contact.html')
 
 class RegisterView(View):
     form_class = RegisterForm
