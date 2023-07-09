@@ -1,1 +1,76 @@
-{% extends "schoolAcademy/base.html" %} {% block title %} about page {% endblock title%} {% block content %} {% endblock content %}
+{% extends "schoolAcademy/base.html" %} {% block title %} about page {% endblock title%} {% block content %}
+
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">About Us</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold text-body-emphasis">Who We Are</h2>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <div class="row g-4">
+                            <div class="col d-flex flex-column gap-2">
+                                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                    <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#collection" />
+                            </svg>
+                                </div>
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Our Mission</h4>
+                                <p class="text-body-secondary">We thrive to create a new approach to kids' education, We believe that education is about individual growth and exploration. Hence, we seek to cater to each child's unique interests and pace of learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="row g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#gear-fill" />
+                            </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Our Values</h4>
+                            <p class="text-body-secondary">We put a strong emphasis on nurturing creativity. Our curriculum is designed to encourage children to think out of the box, express their unique ideas, and find joy in creation.
+                                <br>We believe that the ability to think critically is a key skill in the 21st century.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="row g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#speedometer" />
+                            </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Our Vision</h4>
+                            <p class="text-body-secondary">Our vision is to revolutionize the approach to kids' education, creating an environment where learning is fun, interactive, and impactful. We envision a world where every child is excited about learning and feels empowered
+                                to explore, create, and grow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

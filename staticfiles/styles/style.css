@@ -2,15 +2,19 @@ body {
     background-color: white !important;
     /*e4e4dc */
 }
+
 .wrapper {
     margin-left: 50px;
     margin-right: 50px;
 }
 
+
 /*navbar btn */
-.btn-primary{
+
+.btn-primary {
     background-color: #17a2b8 !important;
 }
+
 #header {
     padding: 10px;
     text-align: center;
@@ -18,36 +22,45 @@ body {
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 #heading {
     margin: 0;
     font-weight: bold;
     font-size: 32px;
 }
+
 #meaning {
     margin: 0;
     font-size: 18px;
 }
+
 #parivesh-form {
     float: left;
     width: fit-content;
     overflow: hidden;
 }
+
 form {
     width: 770px;
     padding: 3rem !important;
 }
+
 .shadow {
     padding: 10px 20px 20px 20px;
     margin: 10px;
     box-shadow: 0px 0px 10px 5px #17a2b8;
     border-radius: 5px;
 }
+
 .group {
     margin-bottom: 1rem;
 }
-#id_gender, #id_locations {
+
+#id_gender,
+#id_locations {
     list-style-type: none;
 }
+
 .submit-button {
     padding: 5px 20px;
     color: black;
@@ -60,33 +73,39 @@ form {
     border-radius: 5px;
     transition-duration: 0.2s;
 }
+
 .submit-button:hover {
     color: #afaeae;
 }
+
 #proposals-list {
     padding: 12.5px;
     overflow: hidden;
     border-radius: 5px;
 }
+
 #proposals-list-appearance {
     padding: 25px;
     background-color: white;
     border-radius: 5px;
 }
+
 #heading-list-proposals {
     padding: 5px;
     font-size: 28px;
     text-align: center;
-    background-color: #17a2b8 ;
+    background-color: #17a2b8;
     border-radius: 5px;
     font-family: 'Open Sans';
     font-weight: bold;
 }
+
 h6 {
     color: #8d8d8b;
     text-align: center;
     border-radius: 5px;
 }
+
 #id_proposal1 {
     padding: 5px;
     margin: 0px;
@@ -94,52 +113,63 @@ h6 {
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 #proposer-name {
-    color: black; 
+    color: black;
     margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 a:link {
     text-decoration: none;
 }
+
 a:visited {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 a:active {
     text-decoration: none;
 }
+
 #id_proposal2 {
     padding: 5px;
     margin: 10px;
     background-color: white;
     border-radius: 5px;
 }
+
 h2 {
     padding: 5px;
     text-align: center;
     background-color: white;
     border-radius: 5px;
-}    
+}
+
 #proposer-img {
     float: left;
     width: 250px;
     margin-right: 20px;
 }
+
 .img {
     width: 250px;
     height: 310px;
     border: 7px solid white;
     border-radius: 0.25rem;
 }
+
 #proposer-details {
     padding: 12.5px;
     overflow: hidden;
-    background-color: white;            
+    background-color: white;
     border-radius: 5px;
 }
+
 .download-button {
     padding: 5px 20px;
     color: black;
@@ -152,9 +182,11 @@ h2 {
     border-radius: 5px;
     transition-duration: 0.2s;
 }
+
 .download-button:hover {
     color: white;
 }
+
 .home-page-button {
     padding: 5px 20px;
     color: black;
@@ -167,15 +199,19 @@ h2 {
     border-radius: 5px;
     transition-duration: 0.2s;
 }
+
 .home-page-button:hover {
     color: #b8b8b2;
 }
+
 .ui-dialog-title {
     text-align: center;
 }
+
 .ui-dialog-titlebar-close {
     visibility: hidden;
 }
+
 @media screen and (max-width: 800px) {
     .wrapper {
         margin-left: 20px;
